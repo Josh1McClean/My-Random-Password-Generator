@@ -1,14 +1,63 @@
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Random Password Generator</title>
+    <link rel="stylesheet" href="app.css">
 </head>
 
 <body>
+    <!--Section1: -->
+    <section class="center">
+        <h2>Generate A Random Password</h2>
 
+        <form class="center">
+            <div class="pwd-length">
+                <label for="length">Password Length</label>
+                <input type="number" id="length" name="length" min="5" max="100">
+            </div>
+
+            <br>
+
+            <div class="checkbox">
+                <p>Select Password Properties:</p>
+            </div>
+
+            <br>
+
+            <div>
+                <input type="checkbox" id="lowercase" name="lowercase">
+                <label for="lowercase">Lowercase Characters</label>
+            </div>
+
+            <br>
+
+            <div>
+                <input type="checkbox" id="uppercase" name="uppercase">
+                <label for="uppercase">Uppercase Characters</label>
+            </div>
+
+            <br>
+
+            <div>
+                <input type="checkbox" id="numbers" name="numbers">
+                <label for="numbers">Numbers (0-9)</label>
+            </div>
+
+            <br>
+
+            <div>
+                <input type="checkbox" id="special" name="special">
+                <label for="special">Special Characters</label>
+            </div>
+
+            <br>
+
+            <button>Generate</button>
+        </form>
+    </section>
+    <script src="app.js"></script>
 </body>
 
 </html>
