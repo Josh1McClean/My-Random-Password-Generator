@@ -8,18 +8,20 @@
 </head>
 
 <body>
-    <!--Section1: -->
+    <!--Section1: Heading and form container-->
     <section class="center">
         <h2>Generate A Random Password</h2>
 
+        <!--Section2: Password length input and form-->
         <form class="center">
             <div class="pwd-length">
                 <label for="length"><b>Password Length:</b></label>
-                <input type="number" id="length" name="length" min="5" max="100" value="5">
+                <input type="number" id="length" name="length" min="5" max="100" placeholder="5-100 Characters">
             </div>
 
             <br>
 
+            <!--Section3: Checkboxes for password properties-->
             <div class="checkboxes">
                 <p><b>Select Password Properties:</b></p>
 
@@ -51,15 +53,16 @@
                     <label for="special">Special Characters</label>
                 </div>
             </div>
+
             <br>
 
+            <!--Section4: Password display container and generate button-->
             <div id="password"></div>
-            <button>Generate</button>
+            <button type="button" onclick="generatePassword()">Generate</button>
         </form>
     </section>
 
-    <!--Section2: -->
-    <script src="ap2.js"></script>
+    <script src="app.js"></script>
 </body>
 
 </html>

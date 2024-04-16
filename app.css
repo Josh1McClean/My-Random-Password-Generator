@@ -1,9 +1,11 @@
+/*Section1: Styling for centering elements*/
 .center {
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 
+/*Section2: Styling for password length input container*/
 .pwd-length {
     display: flex;
     flex-direction: column;
@@ -11,6 +13,7 @@
     align-items: center;
 }
 
+/*Section3: Styling for password length input*/
 #length {
     width: 100%;
     margin-top: 10px;
